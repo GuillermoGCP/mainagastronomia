@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maina Gastronomia</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-
-        <!-- Redes Sociales -->
         <div class="social-icons">
             <a href="https://www.instagram.com/maina.gastronomia/" target="_blank" class="icon">
                 <i class="fab fa-instagram"></i>
@@ -21,18 +23,9 @@
                 <i class="fab fa-facebook-f"></i>
             </a>
         </div>
-
-        <!-- Logo -->
         <div class="logo-title">
-            <img src="images/maina.jpg" alt="Logo del restaurante Maina" class="logo">
+            <img src="images/maina2.jpg" alt="Logo del restaurante Maina" class="logo">
         </div>
-
-        <!-- Icono de menú hamburguesa -->
-        <div class="menu-icon" onclick="toggleMenu()">
-            ☰
-        </div>
-
-        <!-- Menú de navegación -->
         <nav class="nav-menu">
             <ul class="nav-list">
                 <li><a href="./index.html">Inicio</a></li>
@@ -40,7 +33,41 @@
                 <li><a href="./contact.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
     </header>
+
+    <main class="main">
+        <div class="main-section" id="inicio">
+            <div class="section-image">
+                <img src="images/sala1.jpg" alt="Imagen de la sala principal del restaurante Maina">
+                <a href="./reservations.html" class="floating-button">Reservas</a>
+            </div>
+
+
+
+
+        </div>
+    </main>
+    <div class="food-images">
+        <h2>Ven a probar nuestros platos elaborados</h2>
+        <div class="food-images-container">
+            <img src="images/1000018633.jpg" alt="Imagen de un plato elaborado">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3>Maina gastronomía</h3>
+        <p>Avenida del Ferrol 7, 15706, Santiago de Compostela</p>
+        <p>Galicia, España</p>
+        <p><strong>Teléfono de reservas:</strong> <a href="tel:+34881302851">+34 881 30 28 51</a></p>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
+            <path d="M12 2l-8 8h5v8h6v-8h5z" />
+        </svg>
+    </button>
 
     <script src="script.js"></script>
 </body>

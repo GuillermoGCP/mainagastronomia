@@ -1,0 +1,119 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #515d4f;
+    padding: 20px;
+    height: 150px;
+    position: relative;
+}
+
+.logo {
+    max-width: 180px;
+}
+
+.nav-menu {
+    display: flex;
+}
+.nav-menu.active {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #515d4f;
+    z-index: 1;
+}
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.4s ease;
+}
+
+.nav-list li a:hover {
+    color: white;
+}
+
+/* Iconos de Redes Sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.icon:hover {
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 120px;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #515d4f;
+        text-align: center;
+        padding: 15px 0;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 100px;
+    }
+
+    .nav-list li a {
+        font-size: 1rem;
+        align-items: center;
+    }
+
+    .icon {
+        display: none;
+    }
+}
