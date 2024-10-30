@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maina Gastronomia</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="header">
+        <!-- Logo y título -->
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Logo de Maina" class="logo">
+            <h1 class="title">Maina</h1>
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./reservations.html">Reservas</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <img src="images/maina.jpg" alt="Maina Gastronomia" class="header-image">
+        </div>
+
+        <div class="links">
+            <a title="Reservar mesa en Maina" href="./reserva.html">
+                <img src="images/reserva.jpg" alt="Reservar mesa en Maina" class="link-image">
+            </a>
+            <a title="Nuestra carta" href="https://maina.solo.revointouch.works/maina/digital-menu">
+                <img src="images/carta.jpg" alt="Nuestra carta" class="link-image">
+            </a>
+        </div>
+
+        <div class="iframe-container">
+            <iframe id="restaurante-maina" title="Reservas"
+                src="https://www.covermanager.com/reservation/module_restaurant/restaurante-maina/spanish"
+                frameborder="0" onload="iFrameResize();"></iframe>
+        </div>
+
+        <div class="description">
+            <p><strong>Maina é un restaurante</strong> que celebra a frescura e a autenticidade da cociña de mercado...
+            </p>
+            <p><strong>Maina es un restaurante</strong> que celebra la frescura y autenticidad de la cocina de
+                mercado...</p>
+            <p><strong>Maina is a restaurant</strong> that celebrates the freshness and authenticity of market
+                cuisine...</p>
+            <p><strong>Dirección:</strong> Avenida del Ferrol 7, 15706, Santiago de Compostela, Galicia, España <strong>
+                    Teléfono de reservas:</strong> <a href="tel:+34881302851">+34 881 30 28 51</a></p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://www.covermanager.com/js/iframeResizer.min.js"></script>
+</body>
+
+</html>
