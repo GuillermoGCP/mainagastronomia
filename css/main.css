@@ -1,4 +1,5 @@
-.main {
+/* Main image */
+.main-section {
     flex: 1;
     padding: 0;
     margin: 0;
@@ -8,7 +9,7 @@
     position: relative;
 }
 
-/* Section Image */
+/* Food Images */
 .section-image {
     width: 100vw;
     height: 80vh;
@@ -19,7 +20,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .floating-button {
@@ -45,7 +45,7 @@
 }
 
 .food-images {
-    max-width: 600px; /* Ajusta este valor para cambiar el ancho máximo */
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -54,13 +54,13 @@
 .food-images h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #6a735e; /* Un color verde grisáceo claro */
+    color: #6a735e;
 }
 
 .food-images-container {
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* O dos columnas, según el diseño deseado */
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
     justify-items: center;
     margin: 0 auto;
@@ -68,7 +68,7 @@
 
 .food-images-container div {
     width: 100%;
-    max-width: 280px; /* Ajusta según el tamaño que prefieras */
+    max-width: 280px;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
@@ -92,23 +92,53 @@
     text-align: center;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .main {
-        padding: 10px;
-    }
+.instagram-container {
+    max-width: 70vw;
+    margin: 0 auto;
+}
 
-    .section-image img {
-        max-height: 400px;
+.instagram-title {
+    text-align: center;
+    color: #6a735e;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.instagram-section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Ajustes responsivos */
+
+@media (max-width: 640px) {
+    .floating-button {
+        font-size: 0.8rem;
+    }
+    .instagram-section {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 480px) {
-    .main {
-        padding: 5px;
+@media (min-width: 641px) and (max-width: 1024px) {
+    .floating-button {
+        font-size: 1rem;
     }
+    .instagram-section {
+        grid-template-columns: 1fr;
+    }
+}
 
-    .section-image img {
-        max-height: 300px;
+@media (min-width: 1025px) and (max-width: 1450px) {
+    .floating-button {
+        font-size: 1.2rem;
+    }
+    .instagram-section {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
