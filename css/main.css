@@ -1,3 +1,5 @@
+/* MAIN INDEX */
+
 /* Main image */
 .main-section {
     flex: 1;
@@ -98,10 +100,32 @@
 }
 
 .instagram-title {
+    font-family: 'Merriweather', serif;
     text-align: center;
     color: #6a735e;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
     margin: 20px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.instagram-title::first-letter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #278fdf;
+}
+.instagram-title::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 1.6px;
+    background-color: var(--main-color);
+    margin: 10px auto 0;
+}
+.highlight {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .instagram-section {
@@ -132,6 +156,9 @@
     .instagram-section {
         grid-template-columns: 1fr;
     }
+    .instagram-title::after {
+        width: 200px;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1450px) {
@@ -140,5 +167,73 @@
     }
     .instagram-section {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .instagram-title::after {
+        width: 350px;
+    }
+}
+
+/* MAIN RESERVATIONS*/
+
+.table-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    background-image: url('../images/cocineros.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+}
+.table-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(16, 16, 16, 0.5);
+    z-index: 1;
+}
+
+.table-container > * {
+    position: relative;
+    z-index: 2;
+}
+.table-title {
+    padding: 20px;
+    font-size: 2rem;
+    color: #e7e7e7;
+    margin-bottom: 20px;
+}
+
+.iframe-container {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    position: relative;
+}
+
+#iframe-restaurante-maina {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .table-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .table-title {
+        font-size: 1.5rem;
     }
 }
