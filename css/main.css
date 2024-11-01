@@ -95,7 +95,7 @@
 }
 
 .instagram-container {
-    max-width: 70vw;
+    /* max-width: 70vw; */
     margin: 0 auto;
 }
 
@@ -146,6 +146,7 @@
     }
     .instagram-section {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 }
 
@@ -155,6 +156,7 @@
     }
     .instagram-section {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
     .instagram-title::after {
         width: 200px;
