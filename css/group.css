@@ -1,11 +1,11 @@
 .menu {
-    background-color: #fff;
+    background: rgba(240, 240, 240, 0.9);
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 35vw;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .menu h2 {
@@ -13,6 +13,7 @@
     color: var(--main-color);
     text-align: center;
     margin-top: 0;
+    font-family: 'Playfair Display', serif;
 }
 
 .menu h3 {
@@ -23,17 +24,18 @@
     text-transform: uppercase;
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .menu ul {
     text-align: center;
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
     margin: 10px 0;
 }
 
 .menu ul li {
+    margin: 5px 0;
     font-size: 1em;
     line-height: 1.6;
     color: #555;
@@ -52,8 +54,11 @@
     text-align: right;
     margin-top: 20px;
 }
-/* Ajustes responsivos */
+.price::after {
+    content: ' €';
+}
 
+/* Ajustes responsivos */
 @media (max-width: 640px) {
     .menu {
         width: 95%;
