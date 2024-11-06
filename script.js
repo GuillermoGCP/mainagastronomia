@@ -26,6 +26,10 @@ document.addEventListener('click', (event) => {
         ) {
             navMenu.classList.remove('active')
             navMenu.style.display = 'none'
+            const tableContainer = document.querySelector('.table-container')
+            const menuContainer = document.querySelector('.menus-container')
+            if (tableContainer) tableContainer.style.margin = '0 auto '
+            if (menuContainer) menuContainer.style.margin = '0 auto '
         }
     }
 })
