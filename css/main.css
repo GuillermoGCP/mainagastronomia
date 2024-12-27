@@ -2,260 +2,260 @@
 
 /* Main image */
 .main-section {
-    flex: 1;
-    padding: 0;
-    margin: 0;
-    background-color: #f5f5f5;
-    min-height: calc(100vh - 150px);
-    width: 100%;
-    position: relative;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 150px);
+  width: 100%;
+  position: relative;
 }
 
 /* Food Images */
 .section-image {
-    width: 100vw;
-    height: 80vh;
-    position: relative;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
 }
 
 .section-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .floating-button {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #515d4f;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.4s ease, color 0.6s;
-    z-index: 1;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #515d4f;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s ease, color 0.6s;
+  z-index: 1;
 }
 
 .floating-button:hover {
-    background-color: white;
-    color: #515d4f;
+  background-color: white;
+  color: #515d4f;
 }
 
 .food-images {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .food-images h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #6a735e;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #6a735e;
 }
 
 .food-images-container {
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    justify-items: center;
-    margin: 0 auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  justify-items: center;
+  margin: 0 auto;
 }
 
 .food-images-container div {
-    width: 100%;
-    max-width: 280px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .food-images-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .food-images-container div p {
-    width: 100%;
-    margin: 0;
-    padding: 8px;
-    font-size: 0.9rem;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.6);
-    text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
 .instagram-container {
-    max-width: 70vw;
-    margin: 0 auto;
+  max-width: 70vw;
+  margin: 0 auto;
 }
 
 .instagram-title {
-    font-family: 'Merriweather', serif;
-    text-align: center;
-    color: #6a735e;
-    font-size: 2.5rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    margin: 20px;
-    padding: 10px 20px;
-    display: inline-block;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  color: #6a735e;
+  font-size: 2.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 10px 20px;
+  display: inline-block;
 }
 .instagram-title::first-letter {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #278fdf;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #278fdf;
 }
 .instagram-title::after {
-    content: '';
-    display: block;
-    width: 120px;
-    height: 1.6px;
-    background-color: var(--main-color);
-    margin: 10px auto 0;
+  content: '';
+  display: block;
+  width: 120px;
+  height: 1.6px;
+  background-color: var(--main-color);
+  margin: 10px auto 0;
 }
 .highlight {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .instagram-section {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    justify-items: center;
-    gap: 25px;
-    width: 100%;
-    padding: 20px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 25px;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 /* Ajustes responsivos */
 
 @media (max-width: 640px) {
-    .floating-button {
-        font-size: 0.8rem;
-    }
-    .instagram-section {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .instagram-container {
-        max-width: 100vw;
-    }
+  .floating-button {
+    font-size: 0.8rem;
+  }
+  .instagram-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .instagram-container {
+    max-width: 100vw;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
-    .floating-button {
-        font-size: 1rem;
-    }
-    .instagram-section {
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .instagram-title::after {
-        width: 200px;
-    }
-    .instagram-container {
-        max-width: 90vw;
-    }
+  .floating-button {
+    font-size: 1rem;
+  }
+  .instagram-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .instagram-title::after {
+    width: 200px;
+  }
+  .instagram-container {
+    max-width: 90vw;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1450px) {
-    .floating-button {
-        font-size: 1.2rem;
-    }
-    .instagram-section {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .instagram-title::after {
-        width: 350px;
-    }
+  .floating-button {
+    font-size: 1.2rem;
+  }
+  .instagram-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .instagram-title::after {
+    width: 350px;
+  }
 }
 
 /* MAIN RESERVATIONS*/
 
 .table-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    background-image: url('../images/cocineros.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  background-image: url('../images/cocineros.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
 }
 .table-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(16, 16, 16, 0.5);
-    z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(16, 16, 16, 0.5);
+  z-index: 1;
 }
 
 .table-container > * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 .table-title {
-    padding: 20px;
-    font-size: 2rem;
-    color: #e7e7e7;
-    margin-bottom: 20px;
+  padding: 20px;
+  font-size: 2rem;
+  color: #e7e7e7;
+  margin-bottom: 20px;
 }
 
 .iframe-container {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  position: relative;
 }
 
 #iframe-restaurante-maina {
-    width: 100%;
-    height: 100%;
-    border: none;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* GROPUPS MENU*/
 .menus-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    background-image: url('../images/sala2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  background-image: url('../images/sala2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
 }
 
 @media (max-width: 768px) {
-    .table-title {
-        font-size: 1.7rem;
-    }
+  .table-title {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .table-title {
-        font-size: 1.5rem;
-    }
+  .table-title {
+    font-size: 1.5rem;
+  }
 }
