@@ -3,17 +3,13 @@
   align-items: center;
   justify-content: space-around;
   background-color: #515d4f;
-  background-image: url('../images/17488.jpg');
   padding: 20px;
+  height: 150px;
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 300px;
 }
 
 .logo {
   max-width: 180px;
-  border-radius: 50%;
 }
 
 .nav-menu {
