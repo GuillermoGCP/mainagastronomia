@@ -304,14 +304,14 @@
 
 
         /* Footer */
-        .footer {
+        /* .footer {
             background-color: #515d4f;
             width: 100%;
             height: 350px;
             display: flex;
             justify-content: space-around;
             margin-top: auto;
-        }
+        } */
 
         .footer {
             color: rgba(240, 240, 240);
@@ -501,10 +501,85 @@
                 display: none;
             }
         }
+
+        .vacation-banner {
+            background-color: #d9534f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            position: relative;
+            z-index: 1000;
+        }
+
+        .footer {
+            background-color: #515d4f;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: auto;
+            padding: 40px;
+            flex-wrap: wrap;
+            gap: 40px;
+            text-align: center;
+            color: rgba(240, 240, 240);
+        }
+
+        .footer-left-group {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .xunta {
+            max-width: 100px;
+            flex-shrink: 0;
+        }
+
+        .xunta img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .footer-left-group {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .footer h3 {
+                font-size: 1rem;
+            }
+
+            .footer p,
+            .footer li {
+                font-size: 0.8rem;
+            }
+
+            .xunta {
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <div class="vacation-banner">
+        Cerramos por vacaciones del 21 al 30 de abril.
+    </div>
     <header class="header">
         <div class="social-icons">
             <a href="https://www.instagram.com/maina.gastronomia/" target="_blank" class="icon">
@@ -573,11 +648,16 @@
     </main>
 
     <footer class="footer">
-        <div class="addres">
-            <h3>Maina gastronomía</h3>
-            <p>Avenida del Ferrol 7, 15706, Santiago de Compostela</p>
-            <p>Galicia, España</p>
-            <p><strong>Teléfono de reservas:</strong> <a href="tel:+34881302851">+34 881 30 28 51</a></p>
+        <div class="footer-left-group">
+            <div class="addres">
+                <h3>Maina gastronomía</h3>
+                <p>Avenida del Ferrol 7, 15706, Santiago de Compostela</p>
+                <p>Galicia, España</p>
+                <p><strong>Teléfono de reservas:</strong> <a href="tel:+34881302851">+34 881 30 28 51</a></p>
+            </div>
+            <div class="xunta">
+                <img src="images/xunta.jpg" alt="Logo Xunta de Galicia">
+            </div>
         </div>
         <div class="openings">
             <h3>Horario</h3>
@@ -588,6 +668,7 @@
             </ul>
         </div>
     </footer>
+
 
     <button class="scroll-to-top" onclick="scrollToTop()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
